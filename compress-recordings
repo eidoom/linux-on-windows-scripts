@@ -1,0 +1,5 @@
+cd "/mnt/c/Users/ryan/Documents/Sound recordings"
+for f in *.m4a; do 
+avconv -i $f -acodec libvorbis -q:a 0 -ac 1 Lent/${f%.m4a}.ogg
+mv $f ../Recordings_full
+; done
