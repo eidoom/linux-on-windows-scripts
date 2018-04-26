@@ -4,6 +4,6 @@ cd "/mnt/c/Users/ryan/Documents/Sound recordings"
 
 for f in *.m4a
   do
-    avconv -i "${f}" -acodec libopus -b:a 16k -ac 1 -application voip -vbr on -compression_level 10 "Lent-recordings/${f%.m4a}.opus"
+    avconv -i "${f}" -acodec libopus -b:a 16k -ac 1 -application voip -vbr on -compression_level 10 "Easter-recordings/${f%.m4a}.opus"
     mv "${f}" ../Recordings_full
   done
