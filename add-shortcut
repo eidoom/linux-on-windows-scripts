@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cp "/mnt/c/Users/ryan/scripts/$1.lnk" "/mnt/c/Users/ryan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+cp "/mnt/c/Users/ryan/scripts/$1.lnk" "/mnt/c/Users/ryan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Scripts"
