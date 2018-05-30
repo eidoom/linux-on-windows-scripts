@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-cd "/mnt/c/Users/ryan/Documents/New Carlos recordings"
-
-for f in *.m4a
-  do
-    avconv -i "${f}" -acodec libopus -b:a 16k -ac 1 -application voip -vbr on -compression_level 10 "../Sound recordings/Easter-recordings-Carlos/${f%.m4a}.opus"
-    mv "${f}" old
-  done
